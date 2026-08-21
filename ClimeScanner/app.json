@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ClimeScanner",
+    "slug": "climescanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.kawtar.climescanner"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Give $(PRODUCT_NAME) access to your camera to scan QR codes."
+        }
+      ],
+      "expo-image",
+      "expo-router",
+      "expo-splash-screen"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "799f96e6-c274-4664-8e03-f5cd2eece7e6"
+      }
+    }
+  }
+}
